@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css'
+import Horizontal from './components/Horizontal';
+import Form from './components/Form'
 
 function App() {
+  // const [names,setNames]=useState("");
+  // const[department,setDepartment]=useState("");
+  // const[rating,setRating]=useState("")
+  // const[val,setVal]=useState("")
+  // const submitted=(e)=>{
+  //   e.preventDefault();
+  //   setVal(names+" "+department+" "+rating);
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+     <Form/>
+      {/* <Horizontal/> */}
+      {/* <div className='lower-box'>
+        <h3>{names+" "+department+" "+rating}</h3>
+      </div> */}
+   
     </div>
   );
 }
